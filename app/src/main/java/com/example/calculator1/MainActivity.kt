@@ -24,44 +24,68 @@ class MainActivity : AppCompatActivity() {
         var cb=findViewById<Button>(R.id.clear)
 
         b1.setOnClickListener {
-            var sum1 = n1.text.toString().toDouble()
-            var sum2 = n2.text.toString().toDouble()
-            var sum = sum1 + sum2
+            if(n1.text.toString() != "" && n2.text.toString() != "") {
+                var sum1 = n1.text.toString().toDouble()
+                var sum2 = n2.text.toString().toDouble()
+                var sum = sum1 + sum2
 
-            Toast.makeText(this, "$sum", Toast.LENGTH_SHORT).show()
-
+                Toast.makeText(this, "$sum", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"fill both boxes first",Toast.LENGTH_LONG).show()
+            }
         }
 
         b2.setOnClickListener {
-            var num1 = n1.text.toString().toDouble()
-            var num2 = n2.text.toString().toDouble()
-            var prod = num1 * num2
+            if(n1.text.toString() != "" && n2.text.toString() != "") {
+                var num1 = n1.text.toString().toDouble()
+                var num2 = n2.text.toString().toDouble()
+                var prod = num1 * num2
 
-            Toast.makeText(this, "$prod", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "$prod", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"fill both boxes first",Toast.LENGTH_LONG).show()
+            }
         }
 
         b4.setOnClickListener {
-            var num1 = n1.text.toString().toDouble()
-            var num2 = n2.text.toString().toDouble()
-            var sub = num1 - num2
+            if(n1.text.toString() != "" && n2.text.toString() != "") {
+                var num1 = n1.text.toString().toDouble()
+                var num2 = n2.text.toString().toDouble()
+                var sub = num1 - num2
 
-            Toast.makeText(this, "$sub", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "$sub", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"fill both boxes first",Toast.LENGTH_LONG).show()
+            }
         }
 
         b3.setOnClickListener {
-            var num1 = n1.text.toString().toDouble()
-            var num2 = n2.text.toString().toDouble()
-            var ans = num1 / num2
+            if(n1.text.toString() != "" && n2.text.toString() != "") {
+                var num1 = n1.text.toString().toDouble()
+                var num2 = n2.text.toString().toDouble()
+                var ans = num1 / num2
 
-            Toast.makeText(this, "$ans", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "$ans", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"fill both boxes first",Toast.LENGTH_LONG).show()
+            }
         }
 
         b5.setOnClickListener {
-            var num1 = n1.text.toString().toDouble()
-            var num2 = n2.text.toString().toDouble()
-            var per = (num1 * 0.01) * num2
+            if(n1.text.toString() != "" && n2.text.toString() != "") {
+                var num1 = n1.text.toString().toDouble()
+                var num2 = n2.text.toString().toDouble()
+                var per = (num1 * 0.01) * num2
 
-            Toast.makeText(this, "$per", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "$per", Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"fill both boxes first",Toast.LENGTH_LONG).show()
+            }
         }
 
         cb.setOnClickListener {
